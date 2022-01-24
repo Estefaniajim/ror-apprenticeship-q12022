@@ -1,0 +1,4 @@
+<h1>Pokemons</h1>
+<% @pokemons.each do |poke| %>
+  <%= image_tag poke.img, height: 100 %> <%= poke.name %> is level <%= poke.level %> <br>
+<% end %>
