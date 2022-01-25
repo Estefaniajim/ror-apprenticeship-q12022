@@ -5,15 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Trainer.create(name: "Estefania",email: "estefania@gmail.com", password: "test1", level: 1)
+#Trainer.delete_all
 
-Pokemon.delete_all
+#Trainer.create(name: "Estefania",email: "estefania@gmail.com",password: "test1",level: 1)
 
-pokemon1 = Pokemon.create(
-  name: "Pikachu",
-  img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg",
-  level: 1,
-  trainerID: 1)
+#Pokemon.delete_all
+
+Pokemon.create(name: "Pikachu",img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg",level: 1,trainerID: 2)
 
 pokemons_data = []
 response = HTTParty.get("https://pokeapi.co/api/v2/pokemon?limit=6&offset=1")
@@ -27,7 +25,6 @@ response.each do |k, value|
     end
   end
 end
-
 pokemons_data.map do |poke|
   poke_name = poke['forms'][0]['name']
   img_link = poke['sprites']['other']['dream_world']["front_default"]
@@ -35,5 +32,5 @@ pokemons_data.map do |poke|
     name: poke_name.to_s,
     img: img_link.to_s,
     level: 1,
-    trainerID: 1)
+    trainerID: 2)
   end
