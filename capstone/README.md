@@ -1,24 +1,5 @@
-# README
+# Capstone project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hi! Welcome to my final project for the ruby on rails apprenticeship. 
+You check out my demo presentation for more information at:
+https://docs.google.com/presentation/d/1IXef8NlrrlRixiSErlTOZwQ9y7OsOqxe4eH_SoocA8o/edit?usp=sharing
